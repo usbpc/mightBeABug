@@ -1,0 +1,548 @@
+15:33:24.398 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+15:33:24.410 [main] INFO org.eclipse.jetty.util.log - Logging initialized @425ms to org.eclipse.jetty.util.log.Slf4jLog
+15:33:24.413 [main] INFO sx.blah.discord.Discord4J - Discord4J v2.9.3-SNAPSHOT e630d1f (https://github.com/austinv11/Discord4J)
+15:33:24.413 [main] INFO sx.blah.discord.Discord4J - A Java binding for the official Discord API, forked from the inactive https://github.com/nerd/Discord4J. Copyright (c) 2017, Licensed under GNU LGPLv3
+15:33:25.238 [main] DEBUG com.sedmelluq.discord.lavaplayer.tools.io.TrustManagerBuilder - Certificate list /certificates/extended.txt not present in classpath.
+15:33:25.244 [main] INFO com.sedmelluq.discord.lavaplayer.tools.GarbageCollectionMonitor - GC monitoring enabled, reporting results every 2 minutes.
+15:33:25.919 [main] DEBUG sx.blah.discord.Discord4J - Obtained gateway wss://gateway.discord.gg?encoding=json&v=6.
+15:33:26.665 [HttpClient@952565515-20] INFO sx.blah.discord.Discord4J - Websocket Connected.
+15:33:26.952 [Dispatch Handler] INFO sx.blah.discord.Discord4J - Connected to Discord Gateway v6. Receiving 1 guilds.
+15:33:27.512 [RequestBuilder Async Executor] DEBUG sx.blah.discord.Discord4J - New guild has been created/joined! "usbpc und eliros" with ID 104214741601247232 on shard 0.
+15:33:35.475 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J - Message from: usbpc (104214100422180864) in channel ID 274560721147265024: usb!test
+15:33:35.915 [HttpClient@1292402419-42] INFO sx.blah.discord.Discord4J - Voice Websocket Connected.
+15:33:35.918 [HttpClient@1292402419-39] DEBUG sx.blah.discord.Discord4J - Received unknown voice opcode, {"op":8,"d":{"heartbeat_interval":55000}}
+15:33:36.062 [lava-daemon-pool-info-loader-2-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager - Loaded a track with identifier https://www.youtube.com/watch?v=zOWJqNPeifU using YoutubeAudioSourceManager.
+15:33:36.063 [lava-daemon-pool-info-loader-2-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.player.AudioPlayer - Firing an event with class TrackStartEvent
+15:33:36.071 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor - Starting to play track zOWJqNPeifU locally with listener com.sedmelluq.discord.lavaplayer.player.AudioPlayer@75c2f8cc
+15:33:36.338 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J - Message from: usbBot (274222519031169025) in channel ID 274560721147265024:
+15:33:36.341 [Dispatch Handler] DEBUG sx.blah.discord.Discord4J - Message from: usbBot (274222519031169025) in channel ID 274560721147265024:
+15:33:36.515 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack - Starting track from URL: https://r4---sn-h0jeener.googlevideo.com/videoplayback?mm=31&gir=yes&mn=sn-h0jeener&id=o-AK7_fBC2N_qd8cDSrSvO-xonCX6E0GMXPxCbHqKto8J_&dur=9.081&clen=110474&source=youtube&signature=18E831B7B795524ECB69219B5251C5FBC7605B38.39BE6EAB20E4FEE930ECB59646E9B2C8B6DDBD06&mt=1511274670&mv=m&ms=au&lmt=1507194285690172&expire=1511296415&sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&key=yt6&initcwndbps=798750&ipbits=0&pl=26&keepalive=yes&ip=87.165.243.166&mime=audio%2Fwebm&itag=251&ei=PzkUWq6qK8O0cdbtioAM&requiressl=yes
+15:33:36.635 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack - Starting to play track with codec A_OPUS
+15:33:36.639 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.container.common.OpusPacketRouter - Enabling reencode mode on opus track.
+15:33:36.839 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.track.playback.AudioFrameBuffer - Running rebuilder AudioFrameVolumeChanger on 0 buffered frames.
+15:33:46.171 [lava-daemon-pool-playback-1-thread-1] DEBUG com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor - Playing track zOWJqNPeifU finished or was stopped.
+15:33:46.172 [D4J AudioThread] DEBUG com.sedmelluq.discord.lavaplayer.player.AudioPlayer - Firing an event with class TrackEndEvent
+15:33:46.182 [D4J AudioThread] INFO sx.blah.discord.Discord4J - Voice Websocket Disconnected.
+15:33:46.182 [D4J AudioThread] WARN sx.blah.discord.Discord4J - Attempt to send message on closed session: {"op":5,"d":{"delay":0,"speaking":false}}
+15:33:46.183 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket is closed
+	at java.net.DatagramSocket.send(DatagramSocket.java:658)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.sendSilence(UDPVoiceSocket.java:298)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$0(UDPVoiceSocket.java:130)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:227)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.183 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.184 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.185 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.185 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.185 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.185 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.186 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.187 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.189 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.189 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.189 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.189 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.189 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.190 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.191 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+15:33:46.193 [D4J AudioThread] ERROR sx.blah.discord.Discord4J - Discord4J Internal Exception
+java.net.SocketException: Socket closed
+	at java.net.DualStackPlainDatagramSocketImpl.checkAndReturnNativeFD(DualStackPlainDatagramSocketImpl.java:260)
+	at java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:117)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$new$1(UDPVoiceSocket.java:148)
+	at sx.blah.discord.api.internal.UDPVoiceSocket.lambda$begin$2(UDPVoiceSocket.java:228)
+	at sx.blah.discord.util.HighPrecisionRecurrentTask.run(HighPrecisionRecurrentTask.java:60)
+
+Process finished with exit code 1
